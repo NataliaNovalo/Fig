@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#game{
+    width:300px;
+    height:20px;
+    margin:-150px auto;
+    border:3px solid black;
+    z-index: 9;
+}
+
+#slider2{
+    width:150px;
+    height:20px;
+    background-color: #f3483f;
+    position: absolute;
+    margin-left:80px;
+}
+
+#slider1{
+    height:50px;
+    width:20px;
+    background-color: #f2b705;
+    margin-top:-15px;
+    position: absolute;
+    z-index: 9;
+    animation: slide 2s infinite linear;
+}
+
+@keyframes slide{
+    0%{left:500px}
+    50%{left:820px}
+    100%{left:500px}
+}
+
+.tela{
+    z-index:1;
+}
+
+#image_fig{
+    width:362.5px;
+    height:700px;
+    display:block;
+    margin:0 auto;
+}
+
+#btn{
+    margin: 200px auto;
+    display: block;
+    justify-content: center;
+    font-size: 25px;
+    color:#fff;
+    border: solid 1px #0d0d0d;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:360px){
+    @keyframes slide{
+        0%{left:20px}
+        50%{left:320px}
+        100%{left:20px}
+    }
+}
+
+@media screen and (max-width:414px){
+    @keyframes slide{
+        0%{left:50px}
+        50%{left:370px}
+        100%{left:50px}
+    }
+
+}
+
+@media screen and (max-width:320px){
+    @keyframes slide{
+        0%{left:0px}
+        50%{left:300px}
+        100%{left:0px}
+    }
+}
